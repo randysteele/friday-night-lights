@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= full_title(yield(:title)) %></title>
+    <nav >
+    <img alt="The D Zone Football" src="https://www.thedzone.com/assets/dzone-5fbbeccea9b63850956a89dc4ffd4436d1da98a8ba25a65148b5419eb9c20ed0.svg">
+    &nbsp<a href='https://football.thedzone.com/'> <%="All Activity" %> </a> &nbsp
+    &nbsp<a href='https://football.thedzone.com/playoff_teams/bracket'> <%= "Playoffs" %> </a>&nbsp
+    &nbsp<a href='https://football.thedzone.com/news'> <%= "News" %> </a>&nbsp
+    &nbsp<a href='https://football.thedzone.com/events'> <%= "Schedule" %> </a> &nbsp
+    &nbsp<a href='https://football.thedzone.com/events/past'> <%="Scores" %> </a>&nbsp
+    &nbsp<a href='https://football.thedzone.com/directory'> <%= "Teams" %> </a> &nbsp
+    &nbsp<a href='https://football.thedzone.com/players'> <%="Players" %> </a> &nbsp
+    &nbsp<a href='https://football.thedzone.com/rankings'> <%= "Rankings" %> </a>&nbsp
+    &nbsp<a href='https://football.thedzone.com/stats'> <%= "Stats" %> </a>&nbsp
+    &nbsp<a href='https://football.thedzone.com/recruiting'> <%= "Recruiting" %> </a>&nbsp
+    &nbsp<%= link_to "More", '#' %> </a>&nbsp
+
+    </nav>
+
+
+
+
+
+
+
+    <%= stylesheet_link_tag    "application", media: "all" %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>   
+    <%= csrf_meta_tags %>
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <header class="navbar navbar-fixed-top navbar-inverse">
+      <div class="navbar-inner">
+        <div class="container">
+          <%= link_to "Friday Night Lights", '#', id: "logo" %>
+          <nav>
+            <ul class="nav pull-right">
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <div class="container">
+      <%= yield %>
+    </div>
+  </body>
+</html>

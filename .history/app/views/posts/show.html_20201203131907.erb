@@ -1,0 +1,19 @@
+<%= link_to 'All posts', posts_path %>
+<h1><%= @post.title %></h1>
+ 
+ <%
+=begin%>
+ <a href="(image_tag(@post.image.url(:thumb) , alt: 'Image',) @post.image.url, target: '_blank') if @post.image?">
+<%= link_to(image_tag(@post.image.url(:thumb), alt: 'Image'), @post.image.url, target: '_blank') if @post.image? %> 
+<%
+=end%>
+ 
+<p><%= @post.body %></p>
+ 
+<a href=<%='Edit'%> <%edit_post_path(@post)%> </a>
+
+<%
+=begin%>
+ <%= image_tag(@post.image_url(:thumb)) %> 
+<%
+=end%>

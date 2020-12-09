@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= full_title(yield(:title)) %></title>
+    <nav>
+    <img alt="The D Zone Football" src="https://www.thedzone.com/assets/dzone-5fbbeccea9b63850956a89dc4ffd4436d1da98a8ba25a65148b5419eb9c20ed0.svg">
+    &nbsp<a href='https://football.thedzone.com/'><%="All Activity"%></a> &nbsp
+    &nbsp<a href='https://football.thedzone.com/playoff_teams/bracket'><%="Playoffs"%> </a>&nbsp
+    &nbsp<a href='https://football.thedzone.com/news'><%="News"%></a>&nbsp
+    &nbsp<a href='https://football.thedzone.com/events'><%="Schedule"%></a> &nbsp
+    &nbsp<a href='https://football.thedzone.com/events/past'><%="Scores"%></a>&nbsp
+    &nbsp<a href='https://football.thedzone.com/directory'><%="Teams"%></a>&nbsp
+    &nbsp<a href='https://football.thedzone.com/players'><%="Players"%></a>&nbsp
+    &nbsp<a href='https://football.thedzone.com/rankings'><%="Rankings"%></a>&nbsp
+    &nbsp<a href='https://football.thedzone.com/stats'> <%="Stats"%></a>&nbsp
+    &nbsp<a href='https://football.thedzone.com/recruiting'><%="Recruiting"%></a>&nbsp
+    &nbsp<%= link_to "More", '#' %> </a>&nbsp
+    <div class="grid-x list-index feed news grid-margin-y" style="margin-left: -15px; margin-right: -15px;"><article class="cell grid-x"><div class="cell small-12 full-photo-16-9" style="background-image: url('https://s3.amazonaws.com/tls_production/profile_photos/large/DD425639-B429-442E-9CA3-3850D474D118.jpeg?1600633150');"></div><div class="cell small-12 content"><h2><a href="/news/cass-tech-2022-dt-og-jackson-pruitt-was-offered-by-kent-state">Cass Tech 2022 DT/OG Jackson Pruitt was offered by Kent State</a></h2><div class="feed-info section-margin"><span class="time">Published 3 hours ago  by Jeff Corrion</span></div></div></article><article class="cell grid-x"><div class="cell small-12 full-photo-16-9" style="background-image: url('https://s3.amazonaws.com/tls_production/profile_photos/large/2B8C8F8A-8E1B-4D2B-A7D3-821232512CB1.jpeg?1593397292');"></div><div class="cell small-12 content"><h2><a href="/news/stoney-creek-2021-qb-ryan-eckhout-received-a-roster-spot-from-adrian">Stoney Creek 2021 QB Ryan Eckhout received a roster spot from Adrian</a></h2><div class="feed-info section-margin"><span class="time">Published Yesterday  by Jeff Corrion</span></div></div></article><article class="cell grid-x"><div class="cell small-12 full-photo-16-9" style="background-image: url('https://s3.amazonaws.com/tls_production/profile_photos/large/95F3276E-5004-45E5-BBCC-4020C1B07A00.jpeg?1606097764');"></div><div class="cell small-12 content"><h2><a href="/news/rochester-2021-ot-dt-de-te-noah-howes-received-a-preferred-walk-on-from-central-michigan">Rochester 2021 OT/DT/DE/TE Noah Howes received a preferred walk-on from Central Michigan</a></h2><div class="feed-info section-margin"><span class="time">Published Yesterday  by Jeff Corrion</span></div></div></article><article class="cell grid-x"><div class="cell small-12 full-photo-16-9" style="background-image: url('https://s3.amazonaws.com/tls_production/profile_photos/large/EA89116A-4E0E-4528-9B0D-C9F97008F77D.jpeg?1600650620');"></div><div class="cell small-12 content"><h2><a href="/news/canton-2021-og-ot-joshua-martin-received-a-preferred-walk-on-from-central-michigan">Canton 2021 OG/OT Joshua Martin received a preferred walk-on from Central Michigan</a></h2><div class="feed-info section-margin"><span class="time">Published 17 hours ago  by Jeff Corrion</span></div></div></article><article class="cell grid-x"><div class="cell small-12 content"><h2><a href="/news/canton-2021-og-ot-joshua-martin-was-offered-by-eastern-illinois">Canton 2021 OG/OT Joshua Martin was offered by Eastern Illinois</a></h2><div class="feed-info section-margin"><span class="time">Published 17 hours ago  by Jeff Corrion</span></div></div></article></div>
+    </nav>
+
+
+
+
+
+
+
+    <%= stylesheet_link_tag    "application", media: "all" %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>   
+    <%= csrf_meta_tags %>
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <header class="navbar navbar-fixed-top navbar-inverse">
+      <div class="navbar-inner">
+        <div class="container">
+          <%= link_to "Friday Night Lights", '#', id: "logo" %>
+          <nav>
+            <ul class="nav pull-right">
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <div class="container">
+      <%= yield %>
+    </div>
+  </body>
+</html>
